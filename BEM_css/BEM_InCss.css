@@ -1,0 +1,86 @@
+*{
+  padding: 0; 
+  margin: 0;
+  
+}
+body{ 
+width: 100%;
+font-family: Arial;
+display:flex;
+justify-content:flex-end;
+background-image: url(https://media.wired.co.uk/photos/606da0d37aff197af7c72d46/4:3/w_1704,h_1278,c_limit/bosjes-_001-copy.jpg);
+background-color: linear-gradient(rgb(0, 25, 255, 0.1));
+background-blend-mode: darken;
+height: 100%;
+}
+.logo img {
+  width: 40px; 
+  height: 40px; 
+  position: absolute; 
+  margin-top: 0;
+  margin-left: 10px;
+}
+.menu {
+  padding: 0;
+  border:2px solid yellow;
+  height: 200px;
+  background-color: #333;
+  text-align: center;
+   width: 100%; 
+   display: flex; 
+   justify-content: space-around;
+}
+
+.menu li{
+  position: relative;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+.menu li a{
+  width:100px;
+    height: 30px;
+    display: block;
+    text-decoration:none;
+    line-height: 30px;
+    background-color: linear-gradient(rgba(141, 73, 73, 0.1));
+    color: white;
+}
+
+#menu{
+  text-align: left;
+  border: 1px solid blue;
+}
+
+.menu #ul-ngoai #ul-trong li a{
+    width: 89px;
+    text-align: left;
+    padding-left: 10px;
+}
+.menu li a:hover{
+     background-color: red;
+}
+.menu ul ul{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    visibility: hidden;
+    width: 80%;
+}
+.menu ul li:hover ul{
+    visibility: visible;
+}
+.menu__ul-ngoai--separate::after{
+  content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #f0f0f0;
+    height: 14px;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
